@@ -1,18 +1,7 @@
-import 'dart:js';
-
+import 'package:doc_doc/core/routing/app_router.dart';
+import 'package:doc_doc/doc_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      builder: (context, child) => const Scaffold(),
-    );
-  }
+  runApp(DocApp(router: AppRouter()));
 }
