@@ -1,8 +1,11 @@
+import 'package:doc_doc/core/helpers/extensions.dart';
+import 'package:doc_doc/core/helpers/padding.dart';
+import 'package:doc_doc/core/helpers/spacing.dart';
+import 'package:doc_doc/core/widgets/app_text_button.dart';
 import 'package:doc_doc/features/onboarding/ui/widgets/doc_logo_and_name.dart';
 import 'package:doc_doc/features/onboarding/ui/widgets/doctor_image_and_text.dart';
-import 'package:doc_doc/features/onboarding/ui/widgets/get_start_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/routing/routes.dart';
 import '../../core/theming/styles.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -14,24 +17,28 @@ class OnboardingScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 30.h),
+            padding: symmetricPadding(vertical: 30),
             child: Column(
               children: [
                 const DocLogoAndName(),
-                SizedBox(height: 30.h),
+                verticalSpace(30),
                 const DoctorImageAndText(),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30.w),
+                  padding: symmetricPadding(horizontal: 30),
                   child: Text(
                     'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
                     style: TextStyles.font14GreyRegular,
                     textAlign: TextAlign.center,
                   ),
                 ),
-                SizedBox(height: 30.h),
+                verticalSpace(30),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30.w),
-                  child: const GetStartButton(),
+                  padding: symmetricPadding(horizontal: 30),
+                  child: AppTextButton(
+                    buttonText: 'Get Started',
+                    onPressed: () => context.pushNamed(Routes.loginScreen),
+                    textStyle: TextStyles.font16WhiteSemiBold,
+                  ),
                 ),
               ],
             ),
