@@ -7,8 +7,6 @@ class LoginStates<T> with _$LoginStates<T> {
   const factory LoginStates.initial() = _Initial;
 
   const factory LoginStates.loading() = Loading;
-
   const factory LoginStates.success(T data) = Success<T>;
-
   const factory LoginStates.error({required String error}) = Error;
 }

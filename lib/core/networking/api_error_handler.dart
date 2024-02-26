@@ -3,6 +3,9 @@ import 'package:dio/dio.dart';
 import 'api_constants.dart';
 import 'api_error_model.dart';
 
+
+
+// TODO: wallahy I will refactor this .. Omar Ahmed
 enum DataSource {
   NO_CONTENT,
   BAD_REQUEST,
@@ -60,9 +63,7 @@ class ResponseMessage {
   static String RECIEVE_TIMEOUT = ApiErrors.timeoutError;
   static String SEND_TIMEOUT = ApiErrors.timeoutError;
   static String CACHE_ERROR = ApiErrors.cacheError;
-
-  // static String NO_INTERNET_CONNECTION = ApiErrors.noInternetError;
-  static String NO_INTERNET_CONNECTION = '';
+  static String NO_INTERNET_CONNECTION = ApiErrors.noInternetError;
   static String DEFAULT = ApiErrors.defaultError;
 }
 
