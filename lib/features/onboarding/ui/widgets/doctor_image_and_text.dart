@@ -14,19 +14,17 @@ class DoctorImageAndText extends StatelessWidget {
         Row(
           children: [
             horizontalSpace(10),
-            svgGenerator('docdoc_logo_low_opacity'),
+            svgGenerator('docdoc_logo_low_opacity')
           ],
         ),
         Container(
-          foregroundDecoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.white, Colors.white.withOpacity(0.0)],
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter,
-                stops: const [0.14, 0.4]),
-          ),
-          child: imageGenerator('onboarding_doctor'),
-        ),
+            foregroundDecoration: BoxDecoration(
+                gradient: LinearGradient(
+                    colors: [Colors.white, Colors.white.withOpacity(0.0)],
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    stops: const [0.14, 0.4])),
+            child: imageGenerator('onboarding_doctor')),
         Positioned(
           bottom: 30,
           left: 0,

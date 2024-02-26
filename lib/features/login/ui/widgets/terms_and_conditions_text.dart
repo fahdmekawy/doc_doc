@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/theming/styles.dart';
 
 class TermsAndConditionsText extends StatelessWidget {
@@ -12,7 +13,7 @@ class TermsAndConditionsText extends StatelessWidget {
         children: [
           TextSpan(
             text: 'By logging, you agree to our',
-            style: TextStyles.font14GreyRegular,
+            style: TextStyles.font13GreyRegular,
           ),
           TextSpan(
             text: ' Terms & Conditions',
