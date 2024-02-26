@@ -62,6 +62,7 @@ class ResponseMessage {
   static String CACHE_ERROR = ApiErrors.cacheError;
 
   // static String NO_INTERNET_CONNECTION = ApiErrors.noInternetError;
+  static String NO_INTERNET_CONNECTION = '';
   static String DEFAULT = ApiErrors.defaultError;
 }
 
