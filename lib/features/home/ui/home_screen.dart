@@ -9,8 +9,8 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home Screen'),
       ),
-      body: Column(
-        children: [],
+      body: const Column(
+        children: [Text('Home Screen')],
       ),
     );
   }
