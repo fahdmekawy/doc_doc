@@ -1,4 +1,4 @@
-import 'package:doc_doc/core/routing/app_router.dart';
+import 'core/routing/app_router_imports.dart';
 import 'package:doc_doc/core/routing/routes.dart';
 import 'package:doc_doc/core/theming/colors.dart';
 import 'package:flutter/material.dart';
