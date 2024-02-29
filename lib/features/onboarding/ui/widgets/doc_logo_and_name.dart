@@ -1,6 +1,6 @@
 import 'package:doc_doc/core/helpers/spacing.dart';
 import 'package:doc_doc/core/theming/styles.dart';
-import 'package:doc_doc/core/widgets/images_and_svg_generator.dart';
+import 'package:doc_doc/core/widgets/svg_generator.dart';
 import 'package:flutter/material.dart';
 
 class DocLogoAndName extends StatelessWidget {
@@ -11,7 +11,7 @@ class DocLogoAndName extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        svgGenerator('docdoc_logo'),
+        const SvgGenerator('docdoc_logo'),
         horizontalSpace(10),
         Text('DocDoc', style: TextStyles.font24BlackBold)
       ],
