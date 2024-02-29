@@ -21,7 +21,9 @@ class SvgGenerator extends StatelessWidget {
       'assets/svgs/$svgName.svg',
       height: svgHeight,
       width: svgHeight,
-      color: svgColor,
+      colorFilter: svgColor == null
+          ? null
+          : ColorFilter.mode(svgColor!, BlendMode.srcIn),
     );
   }
 }
